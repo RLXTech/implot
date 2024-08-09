@@ -46,6 +46,7 @@
 
 #pragma once
 #include "imgui.h"
+#include <functional>
 
 //-----------------------------------------------------------------------------
 // [SECTION] Macros and Defines
@@ -120,11 +121,11 @@ enum ImAxis_
     ImAxis_X1 = 0, // enabled by default
     ImAxis_X2,     // disabled by default
     ImAxis_X3,     // disabled by default
-    // vertical axes
+               // vertical axes
     ImAxis_Y1, // enabled by default
     ImAxis_Y2, // disabled by default
     ImAxis_Y3, // disabled by default
-    // bookeeping
+               // bookeeping
     ImAxis_COUNT
 };
 
@@ -371,7 +372,7 @@ enum ImPlotCol_
     ImPlotCol_MarkerOutline, // marker outline color (defaults to the current line color)
     ImPlotCol_MarkerFill,    // marker fill color (defaults to the current line color)
     ImPlotCol_ErrorBar,      // error bar color (defaults to ImGuiCol_Text)
-    // plot styling colors
+                        // plot styling colors
     ImPlotCol_FrameBg,       // plot frame background color (defaults to ImGuiCol_FrameBg)
     ImPlotCol_PlotBg,        // plot area background color (defaults to ImGuiCol_WindowBg)
     ImPlotCol_PlotBorder,    // plot area border color (defaults to ImGuiCol_Border)
@@ -404,7 +405,7 @@ enum ImPlotStyleVar_
     ImPlotStyleVar_ErrorBarWeight,   // float,  error bar whisker weight in pixels
     ImPlotStyleVar_DigitalBitHeight, // float,  digital channels bit height (at 1) in pixels
     ImPlotStyleVar_DigitalBitGap,    // float,  digital channels bit padding gap in pixels
-    // plot styling variables
+                                  // plot styling variables
     ImPlotStyleVar_PlotBorderSize,     // float,  thickness of border around plot area
     ImPlotStyleVar_MinorAlpha,         // float,  alpha multiplier applied to minor axis grid lines
     ImPlotStyleVar_MajorTickLen,       // ImVec2, major tick lengths for X and Y axes
